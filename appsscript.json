@@ -1,0 +1,41 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/script.locale",
+    "https://www.googleapis.com/auth/calendar.addons.current.event.read",
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/calendar",
+    "https://www.google.com/calendar/feeds"
+  ],
+  "addOns" : {
+    "common" : { 
+      "name" : "Paycheck Planner",
+      "logoUrl" : "https://paycheckplanner.armatlab.com/assets/icons/logo.jpg",
+      "useLocaleFromApp": true,
+      "layoutProperties": {
+        "primaryColor": "#380470",
+        "secondaryColor": "#9D69D6"
+      },
+      "openLinkUrlPrefixes": [
+        "https://youtube.com",
+        "https://github.com/google/material-design-icons",
+        "https://paycheckplanner.armatlab.com",
+        "https://paypal.me"
+      ]
+    },
+    "calendar" : {
+      "currentEventAccess": "READ",
+      "homepageTrigger": { 
+        "runFunction" : "startPaycheckPlanner",
+        "enabled" : true
+      }
+    },
+    "gmail" : {
+      "homepageTrigger": { "enabled" : false }
+    }
+  }
+}

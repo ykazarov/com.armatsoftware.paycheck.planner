@@ -1,0 +1,45 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/script.locale",
+    "https://www.googleapis.com/auth/calendar.addons.current.event.read",
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/calendar",
+    "https://www.google.com/calendar/feeds"
+  ],
+  "addOns" : {
+    "common" : { 
+      "name" : "Paycheck Planner",
+      "logoUrl" : "https://github.com/ykazarov/Com.ArmatSolutions.Paycheck.Planner/blob/master/assets/icons/logo.jpg?raw=true",
+      "useLocaleFromApp": true,
+      "layoutProperties": {
+        "primaryColor": "#380470",
+        "secondaryColor": "#9D69D6"
+      },
+      "openLinkUrlPrefixes": [
+        "https://youtube.com",
+        "https://github.com/google/material-design-icons"
+      ]
+    },
+    "calendar" : {
+      "currentEventAccess": "READ",
+      "homepageTrigger": { 
+        "runFunction" : "startPaycheckPlanner",
+        "enabled" : true
+      },
+      "eventUpdateTrigger": {
+        "runFunction" : "onEventUpdated"
+      },
+      "eventOpenTrigger": {
+        "runFunction" : "onEventOpened"
+      }
+    },
+    "gmail" : {
+      "homepageTrigger": { "enabled" : false }
+    }
+  }
+}
