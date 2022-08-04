@@ -1,2 +1,2 @@
 # com.armatsoftware.paycheck.planner
- Simple Google Calendar add-on that assists with dayly expense tracking and planning
+ Simple Google Calendar add-on that assists with daily expense tracking and planning
