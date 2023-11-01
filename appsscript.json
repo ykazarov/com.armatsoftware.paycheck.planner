@@ -7,8 +7,7 @@
     "https://www.googleapis.com/auth/script.locale",
     "https://www.googleapis.com/auth/calendar.addons.current.event.read",
     "https://www.googleapis.com/auth/calendar.addons.execute",
-    "https://www.googleapis.com/auth/calendar",
-    "https://www.google.com/calendar/feeds"
+    "https://www.googleapis.com/auth/calendar"
   ],
   "addOns": {
     "common": {
