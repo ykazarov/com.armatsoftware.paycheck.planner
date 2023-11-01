@@ -33,7 +33,7 @@ export class LandingPage {
                 .addWidget(CardService.newTextButton()
                     .setText("Donate")
                     .setOpenLink(CardService.newOpenLink()
-                        .setUrl("https://paypal.me/pools/c/8oH7KVtPIa")
+                        .setUrl("https://www.paypal.com/donate/?hosted_button_id=FX6SFWY3FBQDC")
                         .setOpenAs(CardService.OpenAs.OVERLAY)
                         .setOnClose(CardService.OnClose.NOTHING)
                     )));
